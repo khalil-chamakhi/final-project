@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CAR NEWS</title>
+        <meta name="description" content="Technews website">
+        <link rel="stylesheet" href="main.CSS">
+        <!--aading fonts of google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,200;1,600&family=Raleway:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+       <!--adding font awesome to the website-->
+        <script src="https://kit.fontawesome.com/9a2feddf34.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <div class="navigation-container">
+                <div class="top-head">
+                    <div class="web-name">
+                        <h1>Car News</h1>
+                    </div>
+                    <div class="menu-btn">
+                        <span>
+                            <i class="fas fa-bars"></i>
+                        </span>
+                    </div>
+                    <div class="cancel-btn">
+                        <span>
+                            <i class="fas fa-times"></i>
+                        </span>
+                    </div>
+                </div>
+                <!--adding a navbar to the website -->
+                <div class="nav-bar" id="nav-bar">
+                    <nav>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#news">News</a></li>
+                            <li><a href="#reviews">Reviews</a></li>
+                            <li><a href="#features">Features</a></li>
+                        </ul>
+                    </nav>
+                </div>
+        </header>
+        <section class="banner">
+            <div class="banner-main-content">
+                <h2>GET THE WORLD'S LATEST CAR NEWS</h2>
+                <center>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Lts7debLKeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" mute =1 allowfullscreen></iframe>
+                </div>
+                </center>
+                <div class="description">
+                    <center><p>Car News knows what matters to car buyers and car owners. We filter the daily stream of automotive news to report the information that consumers like you, care the most about, with an emphasis on the facts, figures, and forecasts that can help you to make better decisions. Eliminate the noise and stay informed with Car News.</p></center>
+                </div>
+                <h3> World's Leading Car News Portal </h3>
+                <button>
+                    <a href="a">KNOW MORE!!</a>
+                </button>
+                <div class="current-news-head">
+                    <h3>2024 Corvette E-Ray Accidentally Leaked In Chevrolet Visualizer<span>by Khalil Chamakhi</span></h3>
+                    <h3>2023 Subaru WRX Price Up Slightly From Last Year, Starts At $31,625<span>by Khalil Chamakhi</span></h3>
+                    <h3>2022 Editors's Choice: Hyundai Ioniq 5 Wins Motor1.com Star Award<span>by Khalil Chamakhi</span></h3>
+                    <h3>Ford Mustang Mach-E Coupe May Be Available For Next Generation<span>by Khalil Chamakhi</span></h3>
+                    <h3>GM Program To Install 40,000 EV Charging Stations In US, Canada Begins<span>by Khalil Chamakhi</span></h3>
+                </div>
+            </div>
+        </section>
+        <!--carrousel-->
+        <div class="container">
+            <div class="mySlides">
+                <div class="numbertext">1 /6 </div>
+                <img src="forde.jpeg" style="width:100%;">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">2 / 6</div>
+                <img src="ownership.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">3 / 6</div>
+                <img src="shell.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides">
+                <div class="numbertext">4 / 6</div>
+                <img src="tesla.webp" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">5 / 6</div>
+                <img src="vehicle conectivity.png" style="width:100%">
+            </div>
+            <div class="mySlides">
+                <div class="numbertext">6 / 6</div>
+                <img src="events.jpg" style="width:100%">
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+            <!-- Image text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+            
+            <!-- Thumbnail images -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="forde.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Ford Motor Company: Strategy and performance update – 2022 edition">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="ownership.jpg" style="width:100%" onclick="currentSlide(2)" alt="Future of vehicle ownership">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="shell.jpg" style="width:100%" onclick="currentSlide(3)" alt="Decarbonising vans makes economic and environmental sense">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="tesla.webp" style="width:100%" onclick="currentSlide(4)" alt="Tesla Defends Its Self-Driving Goals And Progress Amid Lawsuit">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="vehicle conectivity.png" style="width:100%" onclick="currentSlide(4)" alt="Vehicle Connectivity ">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="events.jpg" style="width:100%" onclick="currentSlide(4)" alt="10 Biggest Car Shows and Best Motoring Events for 2022">
+                </div>
+            </div>
+        </div>
+        <div>
+            <form name="myForm" onsubmit="return validateForm()" method="post">
+                Full Name: 
+                <input type="text" name="fname">
+                <input type="submit" value="Submit">
+            </form>
+            <form name="form1" onsubmit="return validateemail()" method="post">
+                Enter your email-adress:
+                <input type="text1" name="femail">
+                <input type="submit" value="Submit">
+            </form> 
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>Magazine</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#online">Online Readable Magazine</a></li>
+                            <li><a href="#audio">Online Audio Magazine for handicapped</a></li>
+                            <li><a href="#normal">Physical Normal Magazine </a></li>
+                            <li><a href="#braille">Physical Braille language Magazine for handicapped</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#instagram"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+       </footer>
+  
+
+        
+            
+
+
+
+
+        <script src="script.js" async defer></script>
+    </body>
+</html>

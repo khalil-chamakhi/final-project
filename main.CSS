@@ -1,0 +1,319 @@
+
+*{
+    box-sizing: border-box ;
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --heading:
+    'Raleway',
+    sans-serif;
+}
+body{
+    font-family: 'Raleway',
+    sans-serif;
+    background: #fff;
+}
+/* global styling*/
+img{
+    width:100%;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* header*/
+.top-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background: #252525;
+    color: #fff;
+    padding: 20px 30px;
+}
+.top-head .fas{
+    font-size: 20px;
+    cursor: pointer;
+}
+.cancel-btn{
+    display: none;
+
+}
+.nav-bar{
+    background: #333;
+    height:0;
+    overflow: hidden
+}
+.show-nav{
+    height: auto;
+}
+.nav-bar ul li{
+    text-align: center;
+    display: block;
+    padding: 15px 0;
+    transition: all 1s ease-in-out;
+}
+.nav-bar ul li:hover{
+    background: #0e0e0e;
+
+}
+.nav-bar ul li a {
+    color: #fff;
+    text-transform: uppercase;
+}
+.nav-bar ul li a:hover{
+    text-decoration: underline;
+}
+/*banner*/
+.banner{
+    min-height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 30px 0;
+    margin-top: 8px ;
+}
+.banner-main-content{
+    padding: 0 2rem;
+    line-height: 1.7;
+}
+.banner-main-content h2 {
+    font-size: 2rem;
+    font-family: var(--heading);
+}
+.banner-main-content h3 {
+    padding: 1.5rem 0 ;
+}
+.description {
+    padding: 1rem 0 ;
+    color: #333;
+    font-family: var(--heading);
+    font-size: medium;
+}
+
+.banner-main-content button{
+    border: none;
+    background: #252525;
+    padding: 14px 18px;
+    font-size: 1.2rem;
+    font-family:'Monserrat', sans-serif;
+    transition:  background 1s ease;
+}
+.banner-main-content button a {
+    color: #f3f3f3;
+    transition: color 1s ease;
+}
+.banner-main-content button:hover{
+    background:#fff ;
+}
+.banner-main-content button:hover a{
+    color:#0d0a0b ;
+}
+.current-news-head{
+    background: #fff;
+    padding: 28px;
+    font-size: 12px;
+    margin: 20px 0;
+}
+.current-news-head h3{
+    padding: 6px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 20px;
+}
+.current-news-head h3:hover::before{
+    content: ">>";
+}
+.current-news-head span{
+    display: block;
+    font-family: var(--heading);
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color:#000;
+    color: #FFF;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #000;;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #24262b;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: #e91e63;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+.description{
+    padding-top: 50px;
+}
+.video-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
